@@ -28,11 +28,11 @@ void cetak () {
     }
 }
 
-void push (int data, stack *x) {
+void push (int value, stack *x) {
     if (isFull (x) == 1) {
         printf ("Stack Penuh\n");
     } else {
-        x -> data [x -> count] = data;
+        x -> data [x -> count] = value;
         ++(x-> count);
         printf ("berhasil memasukkan\n");
     }
